@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devsecopsday
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: devsecopsday
+  template:
+    metadata:
+      labels:
+        app: devsecopsday
+    spec:
+      containers:
+      - name: devsecopsday
+        image: suse-south-emea/devsecopsday:1.0
+        ports:
+        - containerPort: 5000
