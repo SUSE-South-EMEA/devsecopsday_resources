@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
       - name: devsecopsday
-        image: suse-south-emea/devsecopsday:v1.0
-        imagePullPolicy: Always
+        image: suse-south-emea/devsecopsday:1.0
         ports:
         - containerPort: 5000
