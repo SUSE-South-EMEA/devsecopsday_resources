@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: devsecopsday
-        image: ghcr.io/suse-south-emea/devsecopsday:v1.1
+        image: ghcr.io/suse-south-emea/devsecopsday:v1.0
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
