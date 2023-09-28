@@ -1,9 +1,9 @@
-0apiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: devsecopsday
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: devsecopsday
